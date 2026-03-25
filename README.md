@@ -12,11 +12,11 @@ A Claude skill that takes a Planthood meal box confirmation email and compiles t
 
 ## Setup
 
-1. Create a new **Project** in Claude.ai
-2. Add `Skill.md` to the project knowledge
-3. Under **Features**, enable:
-   - **Code execution** — runs `curl` + `python3` to fetch and parse pages
-4. Optionally connect the **Gmail integration** to let Claude read your confirmation email directly
+1. Add `Skill.md` to a Claude.ai conversation or project knowledge
+2. Ensure **code execution** is enabled (on by default in Claude.ai)
+3. If you want Claude to read your confirmation email directly, link your **Google account** under Settings → Connected apps
+
+Otherwise, just paste the email into the conversation.
 
 ## Usage
 
