@@ -12,17 +12,20 @@ A Claude skill that takes a Planthood meal box confirmation email and compiles t
 
 ## Setup
 
-1. Add `Skill.md` to a Claude.ai conversation or project knowledge
-2. Ensure **code execution** is enabled (on by default in Claude.ai)
-3. If you want Claude to read your confirmation email directly, link your **Google account** under Settings → Connected apps
-
-Otherwise, just paste the email into the conversation.
+1. Download `Skill.md` from this repo
+2. In Claude.ai, go to **Customize → Skills**, click **+** and upload `Skill.md`
+3. Ensure **code execution** is enabled (on by default in Claude.ai)
+4. If you want Claude to read your confirmation email directly, link your **Google account** under Settings → Connected apps
 
 ## Usage
 
-Start a conversation in the project and either:
-- Paste your Planthood order confirmation email, or
-- Ask Claude to check your Gmail for the latest Planthood email
+In a conversation, type:
+
+```
+/planthood-recipes check my latest Planthood email
+```
+
+Or paste the email contents after the command. Claude will fetch the catalogue, match your meals, and compile the recipes.
 
 ### Example output
 
